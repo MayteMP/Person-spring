@@ -43,4 +43,9 @@ public class PersonController {
 		model.addAttribute("persona", persona);
 		return "form";
 	}
+	@GetMapping("/eliminar/{id}")
+	public String delete(@PathVariable Long id, Model model) {
+		service.delete(id);
+		return "redirect:/listar";
+	}
 }

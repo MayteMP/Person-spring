@@ -9,5 +9,5 @@ public interface IpersonaService {
 	public List<person>listar();
 	public Optional<person>listarId(Long id);
 	public int save(person p);
-	public void delete(int id);		
+	public void delete(Long id);		
 }
