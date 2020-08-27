@@ -23,9 +23,8 @@ public class PersonaService implements IpersonaService {
 	}
 
 	@Override
-	public Optional<person> listarId(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Optional<person>listarId(Long id){
+		return data.findById(id);
 	}
 
 	@Override

@@ -4,6 +4,6 @@ import org.springframework.stereotype.Repository;
 import com.mayte.Aprendiendo.models.person;
 
 @Repository
-public interface IPersona extends CrudRepository<person, Integer>{
+public interface IPersona extends CrudRepository<person, Long>{
 
 }
